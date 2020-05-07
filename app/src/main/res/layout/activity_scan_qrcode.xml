@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanQRCodeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="SCANNED BOOK DETAILS"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#252020" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputbookname"
+                style="@style/parent"
+                android:layout_margin="5dp"
+                android:layout_marginTop="15dp"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/booknameETQR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Book Name"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/newsMoreTextSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputauthorname"
+                style="@style/parent"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/authornameET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Author Name"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/newsMoreTextSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputedition"
+                style="@style/parent"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/editionET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:enabled="false"
+                    android:hint="Edition"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/newsMoreTextSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputisdn"
+                style="@style/parent"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/isdnET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:enabled="false"
+                    android:hint="ISDN"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/newsMoreTextSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputpreface"
+                style="@style/parent"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/prefaceET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:enabled="false"
+                    android:hint="Preface"
+                    android:inputType="text"
+                    android:lines="2"
+                    android:maxLines="4"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/newsMoreTextSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textinputyop"
+                style="@style/parent"
+                android:layout_margin="5dp"
+                android:textColorHint="@color/black">
+
+                <EditText
+                    android:id="@+id/yopET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primaryTextColor"
+                    android:enabled="false"
+                    android:hint="Year of Publishing"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/newsMoreTextSize" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/EditBookDataBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:text="Edit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
